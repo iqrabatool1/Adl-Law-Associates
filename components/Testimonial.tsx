@@ -2,8 +2,20 @@
 import React, { useState } from 'react';
 import './Testimonial.css';
 
-export default function Testimonial({ data }) {
+// Define the Testimonial shape
+interface TestimonialItem {
+  name: string;
+  text: string;
+  role: string;
+}
+
+interface TestimonialProps {
+  data: TestimonialItem[];
+}
+
+export default function Testimonial({ data }: TestimonialProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+  // ... rest of your code remains the same
 
   const nextSlide = () => {
     setActiveIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));

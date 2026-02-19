@@ -2,8 +2,20 @@
 import React, { useEffect, useRef } from 'react';
 import './ServiceCards.css';
 
-export default function ServiceCards({ data }) {
-  const sectionRef = useRef(null);
+// 1. Define the shape of a single service
+interface ServiceItem {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+// 2. Define the props for the component
+interface ServiceCardsProps {
+  data: ServiceItem[];
+}
+
+export default function ServiceCards({ data }: ServiceCardsProps) {
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
