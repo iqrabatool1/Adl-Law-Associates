@@ -1,0 +1,123 @@
+.services-section {
+  padding: 120px 20px;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  color: #000; /* Sets base color to black */
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 10px;
+  color: #000; /* Changed from #111 */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* --- Card Animation States --- */
+.service-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.service-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Card Design --- */
+.card-inner {
+  background: #fff;
+  padding: 40px;
+  height: 100%;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+}
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+  
+  /* Force the color to black */
+  color: #000; 
+  
+  /* If using emojis, this makes them look like black-and-white icons */
+  filter: grayscale(100%) brightness(0); 
+  
+  /* Ensures alignment stays clean */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Make the icon pop or change back on hover */
+.card-inner:hover .service-icon {
+  transform: scale(1.1);
+  filter: grayscale(100%) brightness(0.2); /* Slight lift in tone on hover */
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.feature-list li {
+  font-size: 14px;
+  color: #000; /* Changed from #444 to black */
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature-list li span {
+  color: #000; /* Changed from #999 to black */
+  margin-right: 8px;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+/* --- Hover Effects --- */
+.card-inner:hover {
+  transform: translateY(-10px);
+  border-color: #000;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.read-more:hover {
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .services-header h2 { font-size: 32px; }
+  .card-inner { padding: 30px; }
+}

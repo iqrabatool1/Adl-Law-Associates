@@ -1,0 +1,455 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  background-color: #ffffff;   /* White background */
+  color: #000000;              /* Black text */
+  padding: 80px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ===== TEXT AREA ===== */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 500px;
+  color: #333;
+}
+
+/* ===== BUTTONS ===== */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 26px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.btn-outline {
+  border: 2px solid #000;
+  color: #000;
+  padding: 12px 26px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ===== IMAGE AREA ===== */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+
+  border: 2px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #666;
+  font-size: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .description {
+    margin: auto;
+  }
+}
+/* 1. Define the Keyframe for the slide-up fade */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Create the Reveal Class */
+.reveal {
+  opacity: 0; /* Hidden initially */
+  animation: revealUp 1.2s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
+}
+
+/* 3. Staggered Delays for that "Finch" feel */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+
+/* 4. Smooth Image Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; filter: grayscale(100%); }
+  to { opacity: 1; filter: grayscale(0%); }
+}
+
+.hero-img-animated {
+  opacity: 0;
+  animation: fadeIn 2s ease-out 0.5s forwards;
+  transition: transform 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.hero-img-animated:hover {
+  transform: scale(1.03); /* Subtle premium hover */
+}
+/* Add this to your existing HeroSection.css */
+
+.expertise-section {
+  padding: 120px 20px;
+  background-color: #fafafa;
+  color: #000;
+}
+
+.expertise-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+
+.expertise-header {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.expertise-header h2 {
+  font-size: 42px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* The Animation Core */
+.expertise-box {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #eee;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* Active State triggered by Scroll */
+.expertise-box.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.expertise-box:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.box-number { font-size: 13px; color: #999; margin-bottom: 20px; }
+.expertise-box h3 { font-size: 24px; margin-bottom: 10px; }
+.expertise-box p { color: #666; font-size: 15px; transition: 0.3s; }
+.expertise-box:hover p { color: #aaa; }
+
+.box-arrow { 
+  margin-top: 20px; 
+  font-size: 18px; 
+  opacity: 0; 
+  transition: 0.3s; 
+}
+.expertise-box:hover .box-arrow { opacity: 1; }
+
+@media (max-width: 900px) {
+  .expertise-container { grid-template-columns: 1fr; }
+  .expertise-header { position: static; text-align: center; margin-bottom: 40px; }
+}
+
+/* ===== HOW IT WORKS SECTION ===== */
+.how-it-works {
+  padding: 120px 20px;
+  background-color: #000; /* Dark background for a premium contrast */
+  color: #fff;
+  overflow: hidden;
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.how-title-area {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.how-title-area h2 {
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+/* Steps Layout */
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+/* New Transition: Slide from Left */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px); /* Starts 50px to the left */
+  transition: all 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+  flex: 1;
+  position: relative;
+}
+
+/* Trigger class (handled by our existing Intersection Observer) */
+.is-visible .reveal-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.step-number-circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  background: transparent;
+  transition: 0.5s ease;
+}
+
+.step-card:hover .step-number-circle {
+  background: #fff;
+  color: #000;
+}
+
+.step-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  font-size: 15px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Connecting line between steps */
+.step-line {
+  position: absolute;
+  top: 25px;
+  left: calc(50% + 25px);
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+/* Responsive */
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  overflow: hidden; /* This clips any lines that try to go past the last box */
+}
+
+.step-card {
+  /* ... existing styles ... */
+  flex: 1;
+  position: relative; 
+  z-index: 1; /* Keeps the text above the line */
+}
+
+.step-line {
+  position: absolute;
+  top: 25px;
+  left: 60%; /* Start the line after the circle */
+  width: 100%; /* Stretch to the next card */
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1; /* Put the line BEHIND the circles */
+}
+
+/* ===== WORK AND VISION SECTION ===== */
+.vision-section {
+  padding: 150px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Update these specific parts in your HeroSection.css */
+
+.vision-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px; /* Space between text and image */
+}
+
+.vision-text-side {
+  flex: 1;
+  padding-right: 20px; /* Slight breathing room */
+}
+
+.vision-image-side {
+  flex: 1.1; /* Image slightly larger than text area */
+  width: 100%;
+}
+
+.vision-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  /* Cinematic reveal from the top */
+  clip-path: inset(100% 0 0 0); 
+  transition: clip-path 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.is-visible .vision-img-wrapper {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Ensure mobile layout flips back to a vertical stack */
+@media (max-width: 1024px) {
+  .vision-container {
+    flex-direction: column-reverse; /* Image will go on top, text below on mobile */
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .vision-text-side {
+    padding-right: 0;
+  }
+}
+
+.vision-text-side h2 {
+  font-size: 54px; /* Increased size */
+  line-height: 1.1;
+  margin: 20px 0 40px;
+  font-weight: 800; /* Extra bold for authority */
+  color: #111;
+  letter-spacing: -1px; /* Tighter letters look more modern */
+}
+
+.vision-item {
+  margin-bottom: 45px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+  will-change: transform, opacity; /* Prevents blur during move */
+}
+
+.vision-item h3 {
+  font-size: 20px; /* Bigger sub-headings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  color: #000;
+  font-weight: 700;
+}
+
+.vision-item p {
+  color: #333; /* Darker gray for better contrast */
+  line-height: 1.8; /* More breathing room between lines */
+  font-size: 18px; /* Larger body text */
+  max-width: 500px;
+}
+
+/* Button Styling for Vision Section */
+.btn-outline {
+  padding: 16px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
