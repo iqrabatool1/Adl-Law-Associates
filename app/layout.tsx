@@ -1,9 +1,14 @@
-// app/layout.js
 import './globals.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import type { ReactNode } from 'react'
 
-export default function RootLayout({ children }) {
+export const metadata = {
+  title: 'ADL Law Associates',
+  description: 'Expert legal representation',
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-white text-black font-sans">
