@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 // components/Footer.tsx
 export default function Footer() {
   return (
@@ -7,7 +9,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-black uppercase tracking-tighter mb-6">
-              ADL Law Associates
+              <Link href="/">ADL Law Associates</Link>
             </h3>
             <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
               Dedicated to providing elite legal representation. Our firm stands for 
@@ -22,10 +24,10 @@ export default function Footer() {
               Navigation
             </h3>
             <ul className="space-y-4 text-sm font-medium">
-              <li><a href="#home" className="hover:text-zinc-400 transition-colors">Home</a></li>
-              <li><a href="#services" className="hover:text-zinc-400 transition-colors">Services</a></li>
-              <li><a href="#about" className="hover:text-zinc-400 transition-colors">About</a></li>
-              <li><a href="#contact" className="hover:text-zinc-400 transition-colors">Contact</a></li>
+              <li><Link href="/" className="hover:text-zinc-400 transition-colors">Home</Link></li>
+              <li><Link href="/services" className="hover:text-zinc-400 transition-colors">Services</Link></li>
+              <li><Link href="/about" className="hover:text-zinc-400 transition-colors">About</Link></li>
+              <li><Link href="/contact" className="hover:text-zinc-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
