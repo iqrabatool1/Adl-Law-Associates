@@ -104,7 +104,7 @@ export default function AboutSection() {
           }}
         >
           <img
-            src="/assets/law-office.jpg"
+            src="/riffatjan.png"
             alt="ADL Law Associates"
             style={{
               width: "100%",

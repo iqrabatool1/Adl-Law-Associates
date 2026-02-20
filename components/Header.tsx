@@ -1,20 +1,21 @@
 
 
 import './Header.css'
+import Link from 'next/link'
 
 export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          ADL Law Associates
+          <Link href="/">ADL Law Associates</Link>
         </div>
 
         <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <Link href="/">Home</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
     </header>
