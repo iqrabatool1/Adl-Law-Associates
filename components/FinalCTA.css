@@ -14,23 +14,34 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #888;
+  color: #c5a059; /* Changed from gray to Golden */
+  font-weight: 700;
   display: block;
   margin-bottom: 20px;
 }
 
 .cta-content h2 {
+  font-family: 'Playfair Display', serif; /* Matching your theme */
   font-size: 52px;
   font-weight: 800;
   margin-bottom: 30px;
   letter-spacing: -2px;
+  line-height: 1.2;
+}
+
+/* Specific highlight for the word Rights */
+/* Apply this to make the word "Rights" golden */
+.gold-text {
+  color: #c5a059 !important; /* Your signature legal gold color */
+  font-weight: inherit;      /* Keeps the bold style of the H2 */
 }
 
 .cta-content p {
   font-size: 18px;
-  color: #ccc;
+  color: #ffffff; /* Changed from #ccc to White for clarity */
   line-height: 1.8;
   margin-bottom: 50px;
+  opacity: 1;
 }
 
 .cta-button {
@@ -50,12 +61,14 @@
 }
 
 .cta-button span {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
   transition: 0.3s;
 }
 
 .cta-button:hover {
-  background: #f0f0f0;
+  background: #c5a059; /* Button turns gold on hover */
+  color: #fff;
   transform: translateY(-5px);
 }
 
@@ -65,4 +78,5 @@
 
 @media (max-width: 768px) {
   .cta-content h2 { font-size: 36px; }
+  .cta-button { width: 100%; justify-content: center; }
 }

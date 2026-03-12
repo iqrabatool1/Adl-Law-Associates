@@ -3,8 +3,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import './StatsBar.css';
 
 const stats = [
-  { label: "Cases Won", value: 500, suffix: "+" },
-  { label: "Years Experience", value: 20, suffix: "" },
+  { label: "Cases Won", value: 2000, suffix: "+" },
+  { label: "Years Experience", value: 10, suffix: "" },
   { label: "Client Satisfaction", value: 98, suffix: "%" },
   { label: "Recovered", value: 15, suffix: "M+" }
 ];

@@ -33,7 +33,9 @@ export default function ServiceCards({ data }: ServiceCardsProps) {
     <section className="services-section" ref={sectionRef}>
       <div className="services-container">
         <div className="services-header">
-          <h2 className="text-black">Our Services</h2>
+     <div className="services-header">
+  <h2 className="text-black">Our <span className="gold-text">Services</span></h2>
+</div>
         </div>
         <div className="services-grid">
           {data.map((service, index) => (

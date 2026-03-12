@@ -1,4 +1,6 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import './Footer.css'; // Import the specific CSS for the gold color
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 // components/Footer.tsx
 export default function Footer() {
@@ -9,7 +11,9 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-black uppercase tracking-tighter mb-6">
-              <Link href="/">ADL Law Associates</Link>
+              <Link href="/">
+                ADL Law <span className="gold-text">Associates</span>
+              </Link>
             </h3>
             <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
               Dedicated to providing elite legal representation. Our firm stands for 
@@ -36,21 +40,38 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-zinc-500">
               Connect
             </h3>
-            <div className="space-y-4 text-sm">
-              <p className="text-zinc-300">info@adllaw.com</p>
-              <p className="text-zinc-300">(123) 456-7890</p>
-              <p className="text-zinc-400 leading-relaxed">
-                123 Legal Street,<br />
-                Suite 500, City, State
-              </p>
-            </div>
+            
+
+
+<div className="space-y-4 text-sm">
+  {/* Email */}
+  <div className="flex items-center gap-3">
+    <Mail size={18} className="text-[#c5a059]" />
+    <p className="text-zinc-300">hazratrifat@gmail.com</p>
+  </div>
+
+  {/* Phone */}
+  <div className="flex items-center gap-3">
+    <Phone size={18} className="text-[#c5a059]" />
+    <p className="text-zinc-300">0345-9588005</p>
+  </div>
+
+  {/* Address */}
+  <div className="flex items-start gap-3">
+    <MapPin size={18} className="text-[#c5a059] mt-0.5" />
+    <p className="text-zinc-400 leading-relaxed">
+      Office No.16, Farhan Plaza,<br />
+      G-11 Markaz, Islamabad
+    </p>
+  </div>
+</div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-zinc-900 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-500 text-xs">
-            &copy; {new Date().getFullYear()} ADL Law Associates. 
+            &copy; {new Date().getFullYear()} ADL Law <span className="gold-text">Associates</span>. 
           </p>
           <div className="flex gap-6 text-xs font-bold tracking-widest uppercase">
             <a href="#" className="text-zinc-500 hover:text-white transition">Privacy</a>

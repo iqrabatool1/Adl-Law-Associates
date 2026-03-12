@@ -14,11 +14,34 @@
   margin-bottom: 70px;
 }
 
+
+/* Add this to ServiceCards.css */
+.card-inner h3 {
+  font-size: 22px;
+  font-weight: 800; /* This makes the title very bold */
+  margin-bottom: 15px;
+  color: #000;
+  text-transform: uppercase; /* Optional: adds to the professional look */
+  letter-spacing: 0.5px;
+}
+
+/* Optional: Make the title turn gold when you hover over the card */
+.service-card:hover h3 {
+  color: #c5a059;
+  transition: color 0.3s ease;
+}
+
 .services-header h2 {
   font-size: 42px;
   font-weight: 800;
   margin-top: 10px;
-  color: #000; /* Changed from #111 */
+  /* This ensures "Our" stays black */
+  color: #000000; 
+}
+
+/* This targets the specific word "Services" */
+.gold-text {
+  color: #c5a059;
 }
 
 .services-grid {
@@ -52,22 +75,14 @@
 .service-icon {
   font-size: 40px;
   margin-bottom: 25px;
-  
-  /* Force the color to black */
-  color: #000; 
-  
-  /* If using emojis, this makes them look like black-and-white icons */
-  filter: grayscale(100%) brightness(0); 
-  
-  /* Ensures alignment stays clean */
+
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-/* Optional: Make the icon pop or change back on hover */
 .card-inner:hover .service-icon {
   transform: scale(1.1);
-  filter: grayscale(100%) brightness(0.2); /* Slight lift in tone on hover */
+
 }
 
 .feature-list {
