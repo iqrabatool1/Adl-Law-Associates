@@ -7,10 +7,10 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 export const metadata = {
   title: 'ADL Law Associates',
   description: 'Professional legal services in criminal, civil, family, and corporate law.',
-  icons: {
-    icon: '/logo.jpeg',
-    apple: '/logo.jpeg',
-  },
+  icons: [
+    { rel: 'icon', url: '/logo.png' },
+    { rel: 'apple-touch-icon', url: '/logo.png' },
+  ],
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
