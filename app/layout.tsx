@@ -9,12 +9,9 @@ export const metadata: Metadata = {
   title: 'ADL Law Associates',
   description: 'Professional legal services in criminal, civil, family, and corporate law.',
   icons: {
-    icon: [
-      { url: '/logo.jpeg?v=1', href: '/logo.jpeg?v=1' }, // Updated to .jpeg
-    ],
-    apple: [
-      { url: '/logo.jpeg?v=1', href: '/logo.jpeg?v=1' }, // Updated to .jpeg
-    ],
+    // Adding ?v=1 forces the browser to refresh the icon
+    icon: '/logo.jpeg?v=1', 
+    apple: '/logo.jpeg?v=1',
   },
 }
 
