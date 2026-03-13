@@ -10,7 +10,7 @@ export default function Home() {
   const services = [
     { title: 'Criminal Law', description: 'Expert defense in criminal cases with a focus on justice.', icon: '⚖️' },
     { title: 'Civil Law', description: 'Handling disputes, contracts, and civil matters professionally.', icon: '📜' },
-     { title: 'EDR (Mediation)', description: 'Professional mediation services for resolving disputes amicably.', icon: '🤝' },
+     { title: 'ADR (Mediation)', description: 'Professional mediation services for resolving disputes amicably.', icon: '🤝' },
     { title: 'Family Law', description: 'Support for divorce, custody, and family-related legal issues.', icon: '👨‍👩‍👧‍👦' },
      { title: 'Anti Norcotics', description: 'Specialized legal support in anti-narcotics and drug-related cases.', icon: '💊' },
       
