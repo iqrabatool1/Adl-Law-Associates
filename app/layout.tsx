@@ -4,6 +4,14 @@ import Footer from '../components/Footer'
 import type { ReactNode } from 'react'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
+export const metadata = {
+  title: 'ADL Law Associates',
+  description: 'Professional legal services in criminal, civil, family, and corporate law.',
+  icons: {
+    icon: '/logo.jpeg',
+    apple: '/logo.jpeg',
+  },
+}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
