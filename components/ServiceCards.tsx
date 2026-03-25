@@ -34,7 +34,7 @@ export default function ServiceCards({ data }: ServiceCardsProps) {
       <div className="services-container">
         <div className="services-header">
      <div className="services-header">
-  <h2 className="text-black">Our <span className="gold-text">Services</span></h2>
+  <h2 className="text-black">Why Choose <span className="gold-text">Us</span></h2>
 </div>
         </div>
         <div className="services-grid">

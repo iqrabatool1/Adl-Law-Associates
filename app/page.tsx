@@ -8,11 +8,11 @@ import FinalCTA from '../components/FinalCTA' // Add this
 
 export default function Home() {
   const services = [
-    { title: 'Criminal Law', description: 'Expert defense in criminal cases with a focus on justice.', icon: '⚖️' },
-    { title: 'Civil Law', description: 'Handling disputes, contracts, and civil matters professionally.', icon: '📜' },
-     { title: 'ADR (Mediation)', description: 'Professional mediation services for resolving disputes amicably.', icon: '🤝' },
-    { title: 'Family Law', description: 'Support for divorce, custody, and family-related legal issues.', icon: '👨‍👩‍👧‍👦' },
-     { title: 'Anti Norcotics', description: 'Specialized legal support in anti-narcotics and drug-related cases.', icon: '💊' },
+    { title: 'Availability', description: 'Emergency legal support when you need it most.', icon: '⏰' },
+    { title: 'Proven Track Record', description: 'Over 10 years of combined experience winning complex cases.', icon: '🏆' },
+     { title: 'Client-Centered', description: 'We prioritize your peace of mind and clear communication.', icon: '💬' },
+    { title: 'Transparent Billing', description: 'No hidden fees or surprises. We believe in clear and honest billing practices.', icon: '💰' },
+     { title: 'Multidisciplinary Team.', description: 'Our diverse team brings together expertise from various legal fields.', icon: '💊' },
       
   ]
 
