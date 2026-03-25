@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Header.css';
 import Link from 'next/link';
 
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
