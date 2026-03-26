@@ -9,8 +9,10 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'ADL Law Associates',
   description: 'Professional legal services in criminal, civil, family, and corporate law.',
-  // Google Search Console Verification
- 
+  // GOOGLE SEARCH CONSOLE VERIFICATION
+  verification: {
+    google: 'zfSPmJn17xbBdwujfIJXvl5eWdIP-iLyVxe-h64gvZ8',
+  },
   icons: {
     icon: '/logo.jpeg?v=1', 
     apple: '/logo.jpeg?v=1',
