@@ -10,9 +10,7 @@ export const metadata: Metadata = {
   title: 'ADL Law Associates',
   description: 'Professional legal services in criminal, civil, family, and corporate law.',
   // Google Search Console Verification
-  verification: {
-    google: 'google7f8766081ec234cc',
-  },
+ 
   icons: {
     icon: '/logo.jpeg?v=1', 
     apple: '/logo.jpeg?v=1',
