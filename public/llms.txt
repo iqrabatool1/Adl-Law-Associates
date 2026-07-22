@@ -1,0 +1,26 @@
+﻿# ADL Law Associates
+
+> Law firm based in Islamabad, Pakistan, providing legal representation in criminal, civil, family, ADR/mediation, anti-narcotics, and corporate law matters.
+
+## About
+ADL Law Associates is led by Advocate Riffat Jan, offering legal consultation and representation across Pakistan with over 10 years of combined experience.
+
+## Services
+- Criminal Law defense
+- Civil Law disputes and contracts
+- ADR (Mediation)
+- Family Law (divorce, custody)
+- Anti-Narcotics cases
+- Corporate legal services
+
+## Contact
+- Email: hazratrifat@gmail.com
+- Phone: 0345-9588005
+- Address: Office No.16, Farhan Plaza, G-11 Markaz, Islamabad, Pakistan
+- Website: https://adllawassociates.pk
+
+## Pages
+- [Home](https://adllawassociates.pk/)
+- [Services](https://adllawassociates.pk/services)
+- [About](https://adllawassociates.pk/about)
+- [Contact](https://adllawassociates.pk/contact)
