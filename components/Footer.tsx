@@ -1,5 +1,6 @@
-﻿import Link from 'next/link';
-import './Footer.css';
+﻿
+import Link from 'next/link';
+
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
@@ -36,7 +37,7 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-zinc-500">
               Connect
             </h3>
-            
+
             <div className="space-y-4 text-sm">
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-[#c5a059]" />
@@ -58,33 +59,15 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4 mt-6">
-              
-                href="https://www.facebook.com/profile.php?id=61592148581823"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-zinc-400 hover:text-[#c5a059] transition-colors"
-              >
+              <a href="https://www.facebook.com/profile.php?id=61592148581823" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-zinc-400 hover:text-[#c5a059] transition-colors">
                 <Facebook size={20} />
               </a>
 
-              
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-zinc-400 hover:text-[#c5a059] transition-colors"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-zinc-400 hover:text-[#c5a059] transition-colors">
                 <Instagram size={20} />
               </a>
 
-              
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-zinc-400 hover:text-[#c5a059] transition-colors"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-zinc-400 hover:text-[#c5a059] transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
