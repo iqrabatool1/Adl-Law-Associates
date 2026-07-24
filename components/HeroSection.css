@@ -172,6 +172,7 @@
 }
 
 /* Expertise Hover */
+/* Expertise Hover */
 .expertise-box:hover {
   background: #000;
   border-color: #000;
@@ -186,6 +187,20 @@
   color: #c5a059; 
 }
 
+.expertise-box:hover .box-number {
+  color: #fff;
+}
+
+.expertise-box:hover .box-arrow {
+  color: #fff;
+}
+.expertise-box:hover p {
+  color: #ecebe9 !important; 
+}
+
+.expertise-box:hover h3 {
+  color: #c5a059 !important; 
+}
 /* ===== HOW IT WORKS SECTION ===== */
 .how-it-works {
   padding: 120px 20px;
